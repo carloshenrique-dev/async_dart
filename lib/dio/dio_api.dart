@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 
 void runDio() async {
   var dio = Dio();
-  /*String uri = 'https://viacep.com.br/ws/01001000/json/';
+  String uri = 'https://viacep.com.br/ws/01001000/json/';
   String url2 = 'https://jsonplaceholder.typicode.com/posts';
   String url3 = 'https://jsonplaceholder.typicode.com/posts/1';
 
@@ -19,7 +19,7 @@ void runDio() async {
     print('error');
   }
 
-  var response2 = await dio.get('https://jsonplaceholder.typicode.com/comments',
+  /*var response2 = await dio.get('https://jsonplaceholder.typicode.com/comments',
       queryParameters: {'postId': 1});
   print(response2.data);
 
@@ -32,7 +32,7 @@ void runDio() async {
   print(response4.data);*/
 
   //Interceptors
-  dio.interceptors.add(InterceptorsWrapper(
+  /*dio.interceptors.add(InterceptorsWrapper(
     onRequest: (request, handler) {
       request.headers['Authorization'] =
           'E0x8k02x68L73v7AAeG1bu367j0XtjpJ4dFm8rESUnBxSIKXXao5UM7ubiY6XCNo';
@@ -54,5 +54,5 @@ void runDio() async {
 
   var response2 = await dio.get('https://jsonplaceholder.typicode.com/comments',
       queryParameters: {'postId': 1});
-  print(response2.data);
+  print(response2.data);*/
 }
